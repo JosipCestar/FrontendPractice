@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+    <title>Your Clothing Brand</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Clothing Brand</h1>
+        </header>
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h2>Welcome to Your Clothing Brand</h2>
+            <p>Discover the latest fashion trends and shop our exclusive collection.</p>
+            <ul class="product-list">
+                <li class="product">
+                    <img class="product-image" src="https://www.independenttradingco.com/cdn/shop/products/IND5000P-ALPG_2048x.jpg?v=1640025923" alt="Product 3">
+                    <h3>Product Name 1</h3>
+                    <p>Price: $49.99</p>
+                    <button>Add to Cart</button>
+                </li>
+                <li class="product">
+                    <img class="product-image" src="https://www.independenttradingco.com/cdn/shop/products/IND5000P-ALPG_2048x.jpg?v=1640025923" alt="Product 3">
+                    <h3>Product Name 2</h3>
+                    <p>Price: $59.99</p>
+                    <button onclick="buyitem">Add to Cart</button>
+                </li>
+                <li class="product">
+                    <img class="product-image" src="https://www.independenttradingco.com/cdn/shop/products/IND5000P-ALPG_2048x.jpg?v=1640025923" alt="Product 3">
+                    <h3>Product Name 3</h3>
+                    <p>Price: $39.99</p>
+                    <button onclick="addToBuylist(1,1)">Add to Cart</button>
+                </li>
+            </ul>
+            <div class="add-product-form">
+                <h2>Add a Product</h2>
+                <form id="product-form">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" name="product-name" required>
+    
+                    <label for="product-price">Price:</label>
+                    <input type="text" id="product-price" name="product-price" required>
+    
+                    <button type="button" onclick="addProduct()">Add Product</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
